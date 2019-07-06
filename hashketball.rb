@@ -145,6 +145,7 @@ good_practices
 
 def num_points_scored(players_name)
   game_hash.each do |place, team|
+<<<<<<< HEAD
     team.each do |attribute, data|
       binding.pry
       if attribute == :players
@@ -155,5 +156,8 @@ def num_points_scored(players_name)
         end
       end
     end
+=======
+    binding.pry
+>>>>>>> 285d2df1d9276df89db44926100d818a4aa0475b
   end
 end
