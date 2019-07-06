@@ -119,35 +119,9 @@ def game_hash
 end
 
 
-=begin
-<<<<<<< HEAD
-=======
-
-def good_practices
-  game_hash.each do |location, team_data|
-    #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
-    binding.pry
-    team_data.each do |attribute, data|
-      #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
-      binding.pry
-
-      #what is 'data' at each loop throughout .each block? when will the following line of code work and when will it break?
-      data.each do |data_item|
-          binding.pry
-      end
-    end
-  end
-end
-
-good_practices
->>>>>>> cdc94a83cfd0c4703c67707864d36bc6fd5b3f74
-=end
-
 def num_points_scored(players_name)
   game_hash.each do |place, team|
-<<<<<<< HEAD
     team.each do |attribute, data|
-      binding.pry
       if attribute == :players
         data.each do |player|
           if player[:player_name] == players_name
@@ -156,8 +130,5 @@ def num_points_scored(players_name)
         end
       end
     end
-=======
-    binding.pry
->>>>>>> 285d2df1d9276df89db44926100d818a4aa0475b
   end
 end
